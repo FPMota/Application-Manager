@@ -34,16 +34,3 @@ Por isso:
 ### Dados pessoais fora do repositório
 
 O ficheiro opcional `seed-data.js` serve para carregar candidaturas iniciais e está no `.gitignore`, por isso **não é publicado**. Sem ele, a app começa vazia.
-
-## Estrutura
-
-```
-index.html      # a aplicação toda (HTML, CSS e JS)
-seed-data.js    # opcional e privado (ignorado pelo git)
-```
-
-## Publicar no GitHub Pages
-
-1. No repositório, vai a **Settings → Pages**.
-2. Em **Build and deployment**, escolhe **Deploy from a branch**, branch `main` e pasta `/ (root)`.
-3. Guarda. Passado um minuto, a página fica disponível no endereço acima.
