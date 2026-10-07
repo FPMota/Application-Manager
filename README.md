@@ -1,36 +1,36 @@
 # Application-Manager
 
-Gestor de candidaturas a emprego, simples e elegante. Uma única página (`index.html`), sem servidor, sem contas e sem dependências para instalar.
+A simple, elegant job application tracker. A single page (`index.html`), with no server, no accounts and nothing to install.
 
-Criado para acompanhar candidaturas de forma rápida: o que enviei, o que foi visto, onde houve entrevista, onde fui recusado e onde ainda estou à espera.
+Built to keep track of applications quickly: what I've sent, what has been viewed, where I had interviews, where I was rejected and where I'm still waiting.
 
-## Funcionalidades
+## Features
 
-- **Fluxo por etapas**: Candidatei → Candidatura vista → Entrevista → Oferta → Aceite. Em cada etapa só aparecem os botões que fazem sentido (avançar ou *Recusado*), com **↩ Voltar atrás** para corrigir enganos.
-- **Vaga fechada**: marca vagas que já não aceitam candidaturas. Uma candidatura recusada fecha a vaga automaticamente.
-- **À espera de resposta**: botão dourado que mostra tudo o que não está fechado, recusado ou aceite, com aviso de há quantos dias aguardas.
-- **Notas e entrevistas** por candidatura, com tipo (RH, Técnica, Final) e datas, incluindo entrevistas agendadas.
-- **Data da candidatura editável**.
-- **Filtros**: pesquisa, estado, interação e vaga aberta/fechada.
-- **Números no topo**: candidaturas, com interação, recusadas, com entrevista, com oferta e à espera.
-- Modo claro/escuro automático e animações suaves.
+- **Stage-based flow**: Applied → Application viewed → Interview → Offer → Accepted. At each stage only the relevant buttons appear (move forward or *Rejected*), plus **↩ Go back** to fix mistakes.
+- **Closed listings**: mark jobs that are no longer accepting applications. A rejected application closes the listing automatically.
+- **Awaiting response**: a gold button that shows everything that isn't closed, rejected or accepted, with a notice of how many days you've been waiting.
+- **Notes and interviews** for each application, with type (HR, Technical, Final) and dates, including scheduled interviews.
+- **Editable application date**.
+- **Filters**: search, status, interaction and open/closed listing.
+- **Numbers at the top**: applications, with interaction, rejected, with interview, with offer and awaiting response.
+- Automatic light/dark mode and smooth animations.
 
-## Como usar
+## How to use
 
-Abre o `index.html` no navegador (duplo clique) ou usa a versão no GitHub Pages:
+Open `index.html` in your browser (double-click) or use the GitHub Pages version:
 
 `https://fpmota.github.io/Application-Manager/`
 
-### Onde ficam os dados?
+### Where is the data stored?
 
-No `localStorage` do teu navegador, ou seja, **só no dispositivo e navegador onde usas a página**. Nada é enviado para servidores.
+In your browser's `localStorage`, meaning **only on the device and browser where you use the page**. Nothing is sent to any server.
 
-Por isso:
+Because of that:
 
-- Usa **Exportar backup** de vez em quando (gera um ficheiro `.json`).
-- Usa **Importar backup** para recuperar os dados ou levá-los para outro dispositivo.
-- Limpar os dados de navegação apaga as candidaturas, se não tiveres backup.
+- Use **Export backup** from time to time (it generates a `.json` file).
+- Use **Import backup** to restore your data or move it to another device.
+- Clearing your browsing data deletes your applications if you don't have a backup.
 
-### Dados pessoais fora do repositório
+### Personal data outside the repository
 
-O ficheiro opcional `seed-data.js` serve para carregar candidaturas iniciais e está no `.gitignore`, por isso **não é publicado**. Sem ele, a app começa vazia.
+The optional `seed-data.js` file is used to load initial applications and is listed in `.gitignore`, so it is **not published**. Without it, the app starts empty.
